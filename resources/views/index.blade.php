@@ -11,23 +11,23 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body id="home">
     <!--? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -59,10 +59,10 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#services">Services</a></li>
+                                                <li><a href="#about">About</a></li>
+                                                <li><a href="#contact">Contact</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -121,7 +121,7 @@
         </div>
         <!-- slider Area End-->
         <!--? Categories Area Start -->
-        <div class="categories-area section-padding30">
+        <div class="categories-area section-padding30" id="services">
             <div class="container" x-data="{ service: 1 }">
                 <div class="row">
                     <div class="col-lg-12">
@@ -203,7 +203,7 @@
                                         <label for="exampleInputEmail1">Track your shipments</label>
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                                     </div>
-                                    <button type="submit" class="btn">Track</button>
+                                    <button type="submit" class="btn btn-sm">Track</button>
                                 </form>
                             </div>
                         </div>
@@ -233,7 +233,7 @@
         </div>
         <!-- Categories Area End -->
         <!--? About Area Start -->
-        <div class="about-low-area padding-bottom">
+        <div class="about-low-area padding-bottom" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -264,7 +264,6 @@
                               perekonomian Indonesia dan Masyarakat Ekonomi
                               Asean (MEA)
                             </p>
-                            <a href="about.html" class="btn">More About Us</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -275,7 +274,7 @@
         </div>
         <!-- About Area End -->
     </main>
-    <footer>
+    <footer id="contact">
         <!--? Footer Start-->
         <div class="footer-area footer-bg">
             <div class="container">
@@ -288,7 +287,7 @@
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
                                         <p class="info1">
-                                          Pengiriman Barang Menggunakan COLT DIESEL, FUSO ENGKEL, TRONTON, TRAILER, LOW BED, CONTAINER & KAPAL LOS CARGO? Melalui Darat dan Laut? KAMI SOLUSINYA !!! Kami melayani pengiriman barang partai besar maupun kecil ke seluruh wilayah Indonesia.
+                                          Pengiriman Barang Menggunakan <span class="text-orange">COLT DIESEL</span>, <span class="text-orange">FUSO ENGKEL</span>, <span class="text-orange">TRONTON</span>, <span class="text-orange">TRAILER</span>, <span class="text-orange">LOW BED</span>, <span class="text-orange">CONTAINER & KAPAL LOS CARGO?</span> Melalui Darat dan Laut? KAMI SOLUSINYA !!! Kami melayani pengiriman barang partai besar maupun kecil ke seluruh wilayah Indonesia.
                                         </p>
                                     </div>
                                 </div>
@@ -346,36 +345,36 @@
 
     <!-- JS here -->
 
-    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="{{ asset('assets/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <!-- Jquery, Popper, Bootstrap -->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <!-- Jquery Mobile Menu -->
-    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
     <!-- One Page, Animated-HeadLin -->
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/animated.headline.js"></script>
-    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/js/animated.headline.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.js') }}"></script>
 
     <!-- Nice-select, sticky -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
 
     <!-- contact js -->
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/jquery.form.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/mail-script.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="{{ asset('assets/js/contact.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.form.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/js/mail-script.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
 
     <!-- Jquery Plugins, main Jquery -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
 
 </body>

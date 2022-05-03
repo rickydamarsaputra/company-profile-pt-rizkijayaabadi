@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,800|Teko:300,400,500,600,700&display=swap");
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 5rem;
+}
 .white-bg {
     background: #ffffff;
 }

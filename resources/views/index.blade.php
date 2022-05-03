@@ -122,7 +122,7 @@
         <!-- slider Area End-->
         <!--? Categories Area Start -->
         <div class="categories-area section-padding30">
-            <div class="container">
+            <div class="container" x-data="{ service: 1 }">
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Section Tittle -->
@@ -134,7 +134,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg">
-                        <div class="single-cat active text-center mb-20">
+                        <div class="single-cat active text-center mb-20" x-on:click="service = 1">
                             <div class="cat-icon">
                               <i class="fa-solid fa-map-location-dot"></i>
                             </div>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20">
+                        <div class="single-cat text-center mb-20" x-on:click="service = 2">
                             <div class="cat-icon">
                               <i class="fa-solid fa-truck"></i>
                             </div>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20">
+                        <div class="single-cat text-center mb-20" x-on:click="service = 3">
                             <div class="cat-icon">
                               <i class="fa-solid fa-map-location-dot"></i>
                             </div>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20">
+                        <div class="single-cat text-center mb-20" x-on:click="service = 4">
                             <div class="cat-icon">
                               <i class="fa-solid fa-map-location-dot"></i>
                             </div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20">
+                        <div class="single-cat text-center mb-20" x-on:click="service = 5">
                             <div class="cat-icon">
                               <i class="fa-solid fa-box"></i>
                             </div>
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20">
+                        <div class="single-cat text-center mb-20" x-on:click="service = 6">
                             <div class="cat-icon">
                               <i class="fa-solid fa-truck-fast"></i>
                             </div>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="card">
+                        <div class="card" x-show="service == 1">
                             <div class="card-body">
                                 <form action="">
                                     <div class="form-group">
@@ -205,6 +205,26 @@
                                     </div>
                                     <button type="submit" class="btn">Track</button>
                                 </form>
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 2">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 3">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 4">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 5">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 6">
+                            <div class="card-body">
                             </div>
                         </div>
                     </div>
@@ -356,6 +376,7 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 
 </body>
 

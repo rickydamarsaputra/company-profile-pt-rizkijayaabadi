@@ -66,7 +66,7 @@
             autoplaySpeed: 4000,
             dots: false,
             fade: false,
-            arrows: true,
+            arrows: false,
             prevArrow:
                 '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
             nextArrow:

@@ -95,28 +95,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="hero__caption">
-                                    <h1>Kami Melayani <span>Pengiriman</span> Barang - Barang Retail Ke Seluruh Indonesia</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider slider-height d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="hero__caption">
-                                    <h1>Kami Melayani <span>Pengiriman</span> Barang - Barang Retail Ke Seluruh Indonesia</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- slider Area End-->
@@ -264,6 +242,66 @@
                               perekonomian Indonesia dan Masyarakat Ekonomi
                               Asean (MEA)
                             </p>
+                            <div class="section-tittle mb-35">
+                                <h2>Visi, Misi Dan Legalitas Perusahaan</h2>
+                            </div>
+                            <div class="section-tittle mb-35">
+                                <span>Visi</span>
+                            </div>
+                            <p>
+                                Menjadi perusahaan jasa ekspedisi dan jasa transportsi berkualitas, professional, unggul,
+                                terkemuka dan terpercaya, serta terdepan di Indonesia dalam layanan kinerja juga kepuasan
+                                customer. Selalu mengutamakan mutu layanan pada pelanggan dengan mutu yang tinggi,
+                                aman dan harga yang kompetitif.
+                            </p>
+                            <div class="section-tittle mb-35">
+                                <span>Misi</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    Mengembangkan karyawan yang berkompeten dengan menciptakan lingkungan kerja
+                                    yang baik untuk mendukung tercapainya kepuasan customer dan hasil maksimal
+                                    perusahaan.
+                                </li>
+                                <li>
+                                    Membantu customer dalam pengiriman barang dengan baik dan tepat waktu.
+                                </li>
+                                <li>
+                                    Selalu memberikan pelayanan berkualitas yang terbaik kepada seluruh customer melalui
+                                    mitra kerja perusahaan.
+                                </li>
+                                <li>
+                                    Peningkatan nilai perusahaan bagi para mitra bisnis.
+                                </li>
+                                <li>
+                                    Melakukan kegiatan bisnis sesuaI standar manajemen perusahaan.
+                                </li>
+                                <li>
+                                    Meningkatkan produktifitas kerja karyawan.
+                                </li>
+                                <li>
+                                    Selalu berinovasi dalam setiap perkembangan.
+                                </li>
+                                <li>
+                                    Mensejahterakan taraf hidup karyawan.
+                                </li>
+                                <li>
+                                    Memberikan dampak positif bagi lingkungan sekitar perusahaan.
+                                </li>
+                            </ul>
+                            <div class="section-tittle mb-35">
+                                <span>Legalitas</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    Nomor Induk Wajib Pajak (NPWP) <br>
+                                    No. 92.104.355.0-603.000
+                                </li>
+                                <li>
+                                    Nomor Induk Berusaha (NIB) <br>
+                                    9120302742323
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">

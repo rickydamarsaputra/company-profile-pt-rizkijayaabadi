@@ -2482,6 +2482,14 @@ span.text-orange {
     margin-bottom: 35px;
     padding-right: 50px;
 }
+.about-caption ul{
+    margin-bottom: 35px;
+}
+.about-caption ul li {
+    list-style: decimal;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .about-low-area .about-caption p {
         padding-right: 20px;

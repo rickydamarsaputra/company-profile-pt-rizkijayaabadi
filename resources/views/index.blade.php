@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -34,7 +34,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
+                    <img src="{{ asset('assets/img/rja_logo.png') }}" alt="" width="65px">
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="{{ route('index') }}"><img src="{{ asset('assets/img/rja_logo.png') }}" alt="" width="65px"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -294,28 +294,28 @@
                                 <div class="footer-tittle">
                                   <div class="footer-pera">
                                       <p class="info1">
-                                        Email: rizkijayaabadi@ymail.com
+                                        <span class="d-block">Email: rizkijayaabadi@ymail.com</span>
+                                        <span class="d-block mt-2">Alamat: JL Bypas krian km 30 ruko keraton residence superblok no 9, Sidomukti, Kraton, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262</span>
                                       </p>
                                   </div>
                                 </div>
                                 <!-- Footer Social -->
                                 <div class="footer-social ">
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://web.facebook.com/rizkijaya.abadi.54?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/pt-rizki-jaya-abadi-2756b34b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/rizkijayaabadi_official" target="_blank"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>COMPANY</h4>
+                                    <h4>CONTACT PERSON</h4>
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Company</a></li>
-                                        <li><a href="#"> Press & Blog</a></li>
-                                        <li><a href="#"> Privacy Policy</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=6281354697558&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081354697558</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=6281217829942&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081217829942</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=6282336584694&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 082336584694</a></li>
                                     </ul>
                                 </div>
                             </div>

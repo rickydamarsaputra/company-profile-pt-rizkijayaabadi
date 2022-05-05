@@ -3279,13 +3279,16 @@ span.text-orange {
     color: #848493;
     font-size: 18px;
     text-align: center;
-    margin-left: 24px;
+    margin-left: 1rem;
 }
 .footer-area .footer-social a:first-child {
     margin-left: 0px;
 }
 .footer-area .footer-social a:hover {
     color: #fff;
+}
+.footer-tittle ul li a i {
+    font-size: 18px;
 }
 .hero-caption span {
     color: #fff;

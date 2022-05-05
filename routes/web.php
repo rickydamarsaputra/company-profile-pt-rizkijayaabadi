@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index');
+Route::view('/', 'index')->name('index');
 
 // auth route
 Route::controller(AuthController::class)->prefix('auth')->name('auth.')->group(function () {
@@ -31,5 +31,9 @@ Route::controller(DashboardController::class)->prefix('dashboard')->group(functi
   Route::controller(TrackingBarangController::class)->prefix('tracking-barang')->name('tracking-barang.')->group(function () {
     Route::get('/', 'index')->name('index.view');
     Route::get('/create', 'createView')->name('create.view');
+    Route::post('/create', 'createAction')->name('create.action');
+    Route::get('/detail/{no_surat_jalan}', 'detailView')->name('detail.view');
+    Route::post('/create/timeline/{no_surat_jalan}', 'createTimelineAction')->name('create.timeline.action');
+    Route::get('/datatables', 'datatables')->name('datatables');
   });
 });

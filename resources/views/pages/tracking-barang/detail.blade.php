@@ -29,17 +29,26 @@
           <label for="alamat_tujuan">Alamat Tujuan</label>
           <input type="text" class="form-control" id="alamat_tujuan" value="{{ $tracking->alamat_tujuan }}" readonly>
         </div>
+        <div class="form-group">
+          <label for="alamat_tujuan">Status Tracking</label>
+          <button type="button" class="btn {{ ($tracking->status == 'diproses') ? 'btn-warning' : (($tracking->status == 'dikirim')  ? 'btn-info' : 'btn-success') }} btn-block text-capitalize">{{ $tracking->status }}</button>
+        </div>
         <div class="container-timeline">
           <div class="wrapper">
             <h1>Timeline Tracking</h1>
             <ul class="sessions">
               @foreach ($timeline as $loopItem)
                 <li>
-                  <div class="time">{{ $loopItem->title }}</div>
+                  <div class="time"><a href="{{ route('tracking-barang.timeline.update.view', encrypt($loopItem->id)) }}">{{ $loopItem->title }}</a></div>
                   <p>{{ date_format($loopItem->created_at, 'd M Y, H:i') . ' WIB' }}</p>
                   <p>{{ $loopItem->sub_title }}</p>
                 </li>
               @endforeach
+              <li>
+                <div class="time">Di Proses</div>
+                <p>{{ date_format($tracking->created_at, 'd M Y, H:i') . ' WIB' }}</p>
+                <p>Barang Di Proses</p>
+              </li>
             </ul>
           </div>
         </div> 
@@ -166,11 +175,19 @@ ul, li {
 }
 
 .container-timeline .time {
-	color: #2a2839;
+  color: #2a2839;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-  margin-top: -5px;
   text-transform: capitalize;
+  margin-top: -5px;
+}
+
+.container-timeline .time a{
+  color: #2a2839;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 
 .container-timeline p,

@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'index')->name('index');
+Route::get('/tracking-barang', [TrackingBarangController::class, 'trackingBarang'])->name('tracking.barang');
 
 // auth route
 Route::controller(AuthController::class)->prefix('auth')->name('auth.')->group(function () {
@@ -32,8 +33,13 @@ Route::controller(DashboardController::class)->prefix('dashboard')->group(functi
     Route::get('/', 'index')->name('index.view');
     Route::get('/create', 'createView')->name('create.view');
     Route::post('/create', 'createAction')->name('create.action');
+    Route::get('/update/{no_surat_jalan}', 'updateView')->name('update.view');
+    Route::patch('/update/{no_surat_jalan}', 'updateAction')->name('update.action');
     Route::get('/detail/{no_surat_jalan}', 'detailView')->name('detail.view');
+    Route::get('/delete/{no_surat_jalan}', 'deleteAction')->name('delete.action');
     Route::post('/create/timeline/{no_surat_jalan}', 'createTimelineAction')->name('create.timeline.action');
+    Route::get('/timeline/{id}', 'timelineUpdateView')->name('timeline.update.view');
+    Route::patch('/timeline/{id}', 'timelineUpdateAction')->name('timeline.update.action');
     Route::get('/datatables', 'datatables')->name('datatables');
   });
 });

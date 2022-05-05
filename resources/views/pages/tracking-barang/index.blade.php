@@ -63,13 +63,17 @@
 				{
 					data: 'no_surat_jalan_crypt',
 					render: function(data){
+						let UPDATE_TRACKING_URL = "{{ route('tracking-barang.update.view', ':no_surat_jalan') }}";
 						let DETAIL_TRACKING_URL = "{{ route('tracking-barang.detail.view', ':no_surat_jalan') }}";
+						let DELETE_TRACKING_URL = "{{ route('tracking-barang.delete.action', ':no_surat_jalan') }}";
 
+						UPDATE_TRACKING_URL = UPDATE_TRACKING_URL.replace(':no_surat_jalan', data);
 						DETAIL_TRACKING_URL = DETAIL_TRACKING_URL.replace(':no_surat_jalan', data);
+						DELETE_TRACKING_URL = DELETE_TRACKING_URL.replace(':no_surat_jalan', data);
 
 						return `
-							<a class="btn btn-success btn-sm text-capitalize" href="#">update</a>
-							<a class="btn btn-danger btn-sm text-capitalize mx-2 delete_tracking" href="">delete</a>
+							<a class="btn btn-success btn-sm text-capitalize" href="${UPDATE_TRACKING_URL}">update</a>
+							<a class="btn btn-danger btn-sm text-capitalize mx-2 delete_tracking" href="${DELETE_TRACKING_URL}">delete</a>
 							<a class="btn btn-info btn-sm text-capitalize" href="${DETAIL_TRACKING_URL}">detail</a>
 						`;
 					}

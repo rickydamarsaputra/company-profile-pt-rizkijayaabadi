@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer('step');
             $table->timestamps();
 
-            $table->foreign('tracking_no_surat_jalan')->references('no_surat_jalan')->on('tracking');
+            $table->foreign('tracking_no_surat_jalan')->references('no_surat_jalan')->on('tracking')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

@@ -251,6 +251,5 @@
     $(".single-cat").on("click", function (event) {
         $(".single-cat").removeClass("active");
         $(this).addClass("active");
-        console.log($(this));
     });
 })(jQuery);

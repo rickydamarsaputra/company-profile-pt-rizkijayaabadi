@@ -23,6 +23,117 @@
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+    <!-- Timeline Css -->
+    <style>
+    ul, li {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .container-timeline {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* padding: 3rem 1rem; */
+    }
+    
+    .container-timeline .wrapper {
+        /* padding: 2rem; */
+        border-radius: 15px;
+    }
+    
+    .container-timeline h1 {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        margin-bottom: 2rem;
+    }
+    
+    .container-timeline .sessions {
+        /* margin-top: 2rem; */
+        margin: 0;
+        border-radius: 12px;
+        position: relative;
+    }
+    
+    .container-timeline li {
+        padding-bottom: 0.5rem;
+        border-left: 1px solid #abaaed;
+        position: relative;
+        padding-left: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-timeline li:last-child {
+        border: 0px;
+        padding-bottom: 0;
+    }
+    
+    .container-timeline li:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: #838994;
+        /* border: 1px solid #4e5ed3; */
+        box-shadow: 3px 3px 0px #bab5f8;
+        box-shadow: 0px 0px 0px 4px #e5e7e9;
+        border-radius: 50%;
+        position: absolute;
+        /* left: -10px; */
+        left: -8px;
+        top: 0px;
+    }
+    
+    .container-timeline li:first-child:before {
+        background: #4fd15a;
+        border: 1px solid #4fd15a;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 4px #d6ffde;
+    }
+    
+    .container-timeline li:last-child:before {
+        left: -7px;
+    }
+    
+    .container-timeline .time {
+        color: #2a2839;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: -5px;
+    }
+    
+    .container-timeline p,
+    .container-timeline .time span {
+        color: #4f4f4f;
+        font-family: sans-serif;
+        line-height: 1.5;
+        margin-top: 0.4rem;
+        text-transform: capitalize;
+        opacity: 0.8;
+    }
+    
+    @media screen and (min-width: 601px) {
+        .container-timeline .time {
+            font-size: .9rem;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .container-timeline .time {
+            margin-bottom: .3rem;
+            font-size: 0.85rem;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .container-timeline p {
+            font-size: .9rem;
+        }
+    }
+    </style>
+
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -176,13 +287,34 @@
                     <div class="col">
                         <div class="card" x-show="service == 1">
                             <div class="card-body">
-                                <form action="">
+                                <form action="{{ route('tracking.barang') }}" method="get">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Track your shipments</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        <label for="no_surat_jalan">No Surat Jalan</label>
+                                        <input type="text" class="form-control" id="no_surat_jalan" name="no_surat_jalan" placeholder="masukkan no surat jalan ex: (RJA/VII/030522)...">
                                     </div>
-                                    <button type="submit" class="btn btn-sm">Track</button>
+                                    <button type="submit" class="btn">Track</button>
                                 </form>
+                                @if (!empty($tracking))
+                                    <div class="container-timeline mt-4">
+                                        <div class="wrapper">
+                                            <h1>Timeline Tracking</h1>
+                                            <ul class="sessions">
+                                            @foreach ($timeline as $loopItem)
+                                                <li>
+                                                <div class="time">{{ $loopItem->title }}</div>
+                                                <p>{{ date_format($loopItem->created_at, 'd M Y, H:i') . ' WIB' }}</p>
+                                                <p>{{ $loopItem->sub_title }}</p>
+                                                </li>
+                                            @endforeach
+                                            <li>
+                                                <div class="time">Di Proses</div>
+                                                <p>{{ date_format($tracking->created_at, 'd M Y, H:i') . ' WIB' }}</p>
+                                                <p>Barang Di Proses</p>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                         <div class="card" x-show="service == 2">

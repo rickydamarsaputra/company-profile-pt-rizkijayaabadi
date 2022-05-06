@@ -43,13 +43,21 @@
                   <li><a class="nav-link" href="{{ route('tracking-barang.create.view') }}">Tambah Tracking Barang</a></li>
                 </ul>
               </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fa-solid fa-truck"></i><span>Truck</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="{{ route('truck.index.view') }}">Daftar Truck</a></li>
+                  <li><a class="nav-link" href="{{ route('truck.create.view') }}">Tambah Truck</a></li>
+                </ul>
+              </li>
             </ul>
 
-            <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-              <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                <i class="fas fa-rocket"></i> Documentation
-              </a>
-            </div>
+            <form action="{{ route('auth.logout.action') }}" method="post" class="mt-4 mb-4 p-3 hide-sidebar-mini">
+              @csrf
+              <button type="submit" class="btn btn-danger btn-lg btn-block btn-icon-split">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+              </button>
+            </form>
         </aside>
       </div>
 

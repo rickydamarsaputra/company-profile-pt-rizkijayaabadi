@@ -317,9 +317,31 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="card" x-show="service == 2">
-                            <div class="card-body">
-                            </div>
+                        <div x-show="service == 2">
+                            @foreach ($trucks as $index => $loopItem)
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h1 class="{{ ($index % 2) == 0 ? 'text-left' : 'text-right' }}">{{ $loopItem->nama }}</h1>
+                                        <div class="row">
+                                            @if ($index % 2 == 0)
+                                                <div class="col-lg mb-lg-0 mb-4 order-1">
+                                                    <img src="{{ asset('storage/' . $loopItem->gambar) }}" class="img-fluid" alt="Responsive image">
+                                                </div>
+                                                <div class="col-lg order-2">
+                                                    <p>{{ $loopItem->deskripsi }}</p>
+                                                </div>
+                                            @else
+                                                <div class="col-lg order-2 order-lg-1">
+                                                    <p>{{ $loopItem->deskripsi }}</p>
+                                                </div>
+                                                <div class="col-lg mb-lg-0 mb-4 order-1 order-lg-2">
+                                                    <img src="{{ asset('storage/' . $loopItem->gambar) }}" class="img-fluid" alt="Responsive image">
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                         <div class="card" x-show="service == 3">
                             <div class="card-body">

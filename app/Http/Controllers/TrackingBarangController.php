@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Tracking;
 use App\Models\TrackingDetail;
+use App\Models\Truck;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use DataTables;
@@ -158,19 +159,20 @@ class TrackingBarangController extends Controller
             ->addColumn('no_surat_jalan_crypt', function (Tracking $tracking) {
                 return Crypt::encryptString($tracking->no_surat_jalan);
             })
-            ->toJson();;
+            ->toJson();
     }
 
     public function trackingBarang(Request $request)
     {
         $tracking = Tracking::where('no_surat_jalan', '=', $request->no_surat_jalan)->first();
-
         if (empty($tracking)) return redirect()->route('index');
         $timeline = TrackingDetail::where('tracking_no_surat_jalan', '=', $tracking->no_surat_jalan)->orderBy('step', 'desc')->get(['id', 'title', 'sub_title', 'created_at']);
+        $trucks = Truck::get(['nama', 'gambar', 'deskripsi']);
 
         return view('index', [
             'tracking' => $tracking,
-            'timeline' => $timeline
+            'timeline' => $timeline,
+            'trucks' => $trucks
         ]);
     }
 }

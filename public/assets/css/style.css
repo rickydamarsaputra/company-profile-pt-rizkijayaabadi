@@ -19,7 +19,7 @@
     background: #16161a;
 }
 .theme-bg {
-    background: #f15f22;
+    background: #f32424;
 }
 .brand-bg {
     background: #f1f4fa;
@@ -34,28 +34,28 @@
     color: #16161a;
 }
 .theme-color {
-    color: #f15f22;
+    color: #f32424;
 }
 .boxed-btn {
     background: #fff;
-    color: #f15f22 !important;
+    color: #f32424 !important;
     display: inline-block;
     padding: 18px 44px;
     font-family: "Teko", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #f15f22;
+    border: 1px solid #f32424;
     letter-spacing: 3px;
     text-align: center;
-    color: #f15f22;
+    color: #f32424;
     text-transform: uppercase;
     cursor: pointer;
 }
 .boxed-btn:hover {
-    background: #f15f22;
+    background: #f32424;
     color: #fff !important;
-    border: 1px solid #f15f22;
+    border: 1px solid #f32424;
 }
 .boxed-btn:focus {
     outline: none;
@@ -329,7 +329,7 @@ hr {
     background: #ff3500;
 }
 .btn {
-    background: #ff5f13;
+    background: #f32424;
     padding: 27px 44px;
     text-transform: uppercase;
     font-family: "Barlow", sans-serif;
@@ -359,7 +359,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #e0581e;
+    /* background: #f32424; */
     z-index: 1;
     border-radius: 5px;
     transition: transform 0.5s;
@@ -384,7 +384,7 @@ hr {
 }
 .submit-btn {
     width: 100%;
-    background: #ff5f13;
+    background: #f32424;
     padding: 19px 44px;
     color: #fff;
     cursor: pointer;
@@ -457,7 +457,7 @@ hero-btn {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #f15f22;
+    background: #f32424;
     z-index: -1;
     transition: transform 0.5s;
     transition-timing-function: ease;
@@ -475,7 +475,7 @@ hero-btn {
 }
 #scrollUp,
 #back-top {
-    background: #f15f22;
+    background: #f32424;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -1570,7 +1570,7 @@ hero-btn {
     position: relative;
     border-style: solid;
     border-width: 1px;
-    border-top-color: #f15f22;
+    border-top-color: #f32424;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -1799,7 +1799,7 @@ hero-btn {
     top: 50%;
 }
 span.text-orange {
-    color: #ff5f13;
+    color: #f32424;
     font-weight: 600;
 }
 .padding-bottom {
@@ -1950,7 +1950,7 @@ span.text-orange {
 .section-tittle span {
     font-size: 18px;
     display: block;
-    color: #f15f22;
+    color: #f32424;
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 17px;
@@ -2008,7 +2008,7 @@ span.text-orange {
     background: #16161a;
 }
 .theme-bg {
-    background: #f15f22;
+    background: #f32424;
 }
 .brand-bg {
     background: #f1f4fa;
@@ -2023,7 +2023,7 @@ span.text-orange {
     color: #16161a;
 }
 .theme-color {
-    color: #f15f22;
+    color: #f32424;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area .header-bottom {
@@ -2083,7 +2083,7 @@ span.text-orange {
     padding-left: 25px;
 }
 .header-area .header-top .header-info-right .header-social li a:hover {
-    color: #f15f22;
+    color: #f32424;
 }
 .main-header {
     position: relative;
@@ -2118,7 +2118,7 @@ span.text-orange {
     }
 }
 .main-header .main-menu ul li:hover > a {
-    color: #f15f22;
+    color: #f32424;
 }
 .main-header .main-menu ul ul.submenu {
     position: absolute;
@@ -2130,7 +2130,7 @@ span.text-orange {
     opacity: 0;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
     padding: 17px 0;
-    border-top: 5px solid #f15f22;
+    border-top: 5px solid #f32424;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -2147,7 +2147,7 @@ span.text-orange {
     color: #fdfdfd;
 }
 .main-header .main-menu ul ul.submenu > li > a:hover {
-    color: #f15f22;
+    color: #f32424;
     background: none;
     padding-left: 13px !important;
 }
@@ -2217,7 +2217,7 @@ span.text-orange {
     top: -34px;
 }
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-    background-color: #f15f22 !important;
+    background-color: #f32424 !important;
 }
 .mobile_menu .slicknav_menu .slicknav_nav {
     margin-top: 9px !important;
@@ -2225,7 +2225,7 @@ span.text-orange {
 }
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #f15f22;
+    color: #f32424;
 }
 .mobile_menu .slicknav_menu .slicknav_nav a {
     font-size: 15px;
@@ -2326,7 +2326,7 @@ span.text-orange {
     }
 }
 .slider-area .hero__caption h1 span {
-    color: #f15f22;
+    color: #f32424;
 }
 .slider-area form.search-box {
     display: flex;
@@ -2397,7 +2397,7 @@ span.text-orange {
 .slider-area form.search-box .search-form a {
     width: 100%;
     height: 60px;
-    background: #ff5f13;
+    background: #f32424;
     font-size: 20px;
     line-height: 1;
     text-align: center;
@@ -2482,7 +2482,7 @@ span.text-orange {
     margin-bottom: 35px;
     padding-right: 50px;
 }
-.about-caption ul{
+.about-caption ul {
     margin-bottom: 35px;
 }
 .about-caption ul li {
@@ -2563,7 +2563,7 @@ span.text-orange {
     align-items: center;
 }
 .our-info-area .single-info .info-icon span {
-    color: #f15f22;
+    color: #f32424;
     font-size: 44px;
     margin-bottom: 0;
     display: block;
@@ -2611,7 +2611,7 @@ span.text-orange {
     content: "";
     width: 100%;
     height: 0;
-    background: #ff5f13;
+    background: #f32424;
     transition: 0.6s;
     bottom: 0;
     left: 0;
@@ -2619,7 +2619,7 @@ span.text-orange {
     border-radius: 6px;
 }
 .categories-area .single-cat.active {
-    background-color: #ff5f13;
+    background-color: #f32424;
 }
 .categories-area .single-cat.active .cat-icon span,
 .categories-area .single-cat.active .cat-icon i,
@@ -2628,13 +2628,13 @@ span.text-orange {
 }
 
 .categories-area .single-cat .cat-icon span {
-    color: #f15f22;
+    color: #f32424;
     font-size: 50px;
     /* margin-bottom: 30px; */
     display: block;
 }
 .categories-area .single-cat .cat-icon i {
-    color: #f15f22;
+    color: #f32424;
     font-size: 2.5rem;
     margin: 1rem 0;
     display: block;
@@ -2911,7 +2911,7 @@ span.text-orange {
     .radio
     input[type="radio"]:checked
     + .radio-label:before {
-    background-color: #f15f22;
+    background-color: #f32424;
     box-shadow: inset 0 0 0 4px #f4f4f4;
 }
 .contact-form-area
@@ -2923,7 +2923,7 @@ span.text-orange {
     input[type="radio"]:focus
     + .radio-label:before {
     outline: none;
-    border-color: #f15f22;
+    border-color: #f32424;
 }
 .contact-form-area
     .contact-form-wrapper
@@ -2979,7 +2979,7 @@ span.text-orange {
     font-size: 20px;
 }
 .team-area .single-team .team-caption h3 a:hover {
-    color: #f15f22;
+    color: #f32424;
 }
 .team-area .single-team .team-caption p {
     color: #2c234d;
@@ -2994,7 +2994,7 @@ span.text-orange {
     color: #fff;
 }
 .team-area .single-team:hover .team-caption {
-    background: #f15f22;
+    background: #f32424;
     bottom: 0;
 }
 .team-area .single-team:hover .team-caption h3 a {
@@ -3096,8 +3096,8 @@ span.text-orange {
     border: 1px solid #616373;
 }
 .h1-testimonial-active button.slick-arrow:hover {
-    border: 1px solid #f15f22;
-    color: #f15f22;
+    border: 1px solid #f32424;
+    color: #f32424;
 }
 .h1-testimonial-active button.slick-next {
     right: 31px;
@@ -3192,7 +3192,7 @@ span.text-orange {
     font-size: 18px;
 }
 .footer-area .footer-heading .contact-number {
-    color: #ff5f13;
+    color: #f32424;
     font-size: 36px;
     font-weight: 700;
 }
@@ -3263,7 +3263,7 @@ span.text-orange {
     font-weight: 300;
 }
 .footer-area .footer-top .single-footer-caption .footer-tittle ul li a:hover {
-    color: #f15f22;
+    color: #f32424;
     padding-left: 5px;
 }
 .footer-area .footer-bottom {
@@ -3278,10 +3278,10 @@ span.text-orange {
     margin-bottom: 12px;
 }
 .footer-area .footer-bottom .footer-copy-right p i {
-    color: #f15f22;
+    color: #f32424;
 }
 .footer-area .footer-bottom .footer-copy-right p a {
-    color: #f15f22;
+    color: #f32424;
 }
 .footer-area .footer-social a {
     color: #848493;
@@ -3312,7 +3312,7 @@ span.text-orange {
     content: "";
     width: 75px;
     height: 3px;
-    background: #f15f22;
+    background: #f32424;
     left: 0;
     top: 52%;
     transform: translateY(-50%);
@@ -3360,7 +3360,7 @@ span.text-orange {
     }
 }
 .home-blog-area .home-blog-single .blog-caption .blog-date span {
-    color: #f15f22;
+    color: #f32424;
     font-size: 32px;
     font-weight: 700;
     line-height: 1;
@@ -3427,7 +3427,7 @@ span.text-orange {
     display: block;
 }
 .home-blog-area .home-blog-single .blog-caption .blog-cap h3 a:hover {
-    color: #f15f22;
+    color: #f32424;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .home-blog-area .home-blog-single .blog-caption .blog-cap h3 a {
@@ -3459,7 +3459,7 @@ span.text-orange {
 }
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #f15f22 0%, #f15f22 99%);
+    background: -webkit-linear-gradient(131deg, #f32424 0%, #f32424 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -3836,7 +3836,7 @@ span.text-orange {
     color: #242b5e;
 }
 .blog_details a:hover {
-    color: #ff5f13;
+    color: #f32424;
 }
 .blog_details h2 {
     font-size: 18px;
@@ -3884,7 +3884,7 @@ span.text-orange {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #f15f22;
+    background-color: #f32424;
     padding: 8px 15px;
     border-radius: 5px;
 }
@@ -3953,7 +3953,7 @@ span.text-orange {
     box-shadow: none;
 }
 .blog_right_sidebar .search_widget .input-group button {
-    background: #f15f22;
+    background: #f32424;
     border-left: 0;
     border: 1px solid #f0e9ff;
     padding: 4px 15px;
@@ -4051,7 +4051,7 @@ span.text-orange {
     font-size: 13px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #f15f22;
+    background: #f32424;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -4226,7 +4226,7 @@ span.text-orange {
     display: inline-block;
 }
 .single-post-area .blog-author a:hover {
-    color: #ff5f13;
+    color: #f32424;
 }
 .single-post-area .blog-author p {
     margin-bottom: 0;

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -217,7 +217,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-80">
                             <span>Our Services</span>
-                            <h2>What We Can Do For You</h2>
+                            <h2>Apa yang Dapat Kami Lakukan Untuk Anda</h2>
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                     <div class="col-lg">
                         <div class="single-cat text-center mb-20" x-on:click="service = 3">
                             <div class="cat-icon">
-                              <i class="fa-solid fa-map-location-dot"></i>
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Retail</h5>
@@ -255,7 +255,7 @@
                     <div class="col-lg">
                         <div class="single-cat text-center mb-20" x-on:click="service = 4">
                             <div class="cat-icon">
-                              <i class="fa-solid fa-map-location-dot"></i>
+                                <i class="fa-solid fa-truck-ramp-box"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Freight Forwarding</h5>
@@ -275,7 +275,7 @@
                     <div class="col-lg">
                         <div class="single-cat text-center mb-20" x-on:click="service = 6">
                             <div class="cat-icon">
-                              <i class="fa-solid fa-truck-fast"></i>
+                                <i class="fa-solid fa-ship"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Shipping Service</h5>
@@ -287,6 +287,7 @@
                     <div class="col">
                         <div class="card" x-show="service == 1">
                             <div class="card-body">
+                                <h1>Tracking Barang</h1>
                                 <form action="{{ route('tracking.barang') }}" method="get">
                                     <div class="form-group">
                                         <label for="no_surat_jalan">No Surat Jalan</label>
@@ -325,14 +326,14 @@
                                         <div class="row">
                                             @if ($index % 2 == 0)
                                                 <div class="col-lg mb-lg-0 mb-4 order-1">
-                                                    <img src="{{ asset('storage/' . $loopItem->gambar) }}" class="img-fluid" alt="Responsive image">
+                                                    <img src="{{ asset('storage/' . $loopItem->gambar) }}" class="img-fluid" alt="{{ $loopItem->deskripsi }}">
                                                 </div>
                                                 <div class="col-lg order-2">
-                                                    <p>{{ $loopItem->deskripsi }}</p>
+                                                    <p class="text-capitalize">{{ $loopItem->deskripsi }}</p>
                                                 </div>
                                             @else
                                                 <div class="col-lg order-2 order-lg-1">
-                                                    <p>{{ $loopItem->deskripsi }}</p>
+                                                    <p class="text-capitalize">{{ $loopItem->deskripsi }}</p>
                                                 </div>
                                                 <div class="col-lg mb-lg-0 mb-4 order-1 order-lg-2">
                                                     <img src="{{ asset('storage/' . $loopItem->gambar) }}" class="img-fluid" alt="Responsive image">
@@ -345,18 +346,88 @@
                         </div>
                         <div class="card" x-show="service == 3">
                             <div class="card-body">
+                                <h1 class="text-center mb-0">Coming soon...</h1>
                             </div>
                         </div>
                         <div class="card" x-show="service == 4">
                             <div class="card-body">
+                                <h1>Freight Forwarding</h1>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="{{ asset('assets/img/freight_forwarding_img.jpg') }}" class="img-fluid" alt="pengertian freight forwarding
+                                        (jasa pengiriman barang) adalah
+                                        badan usaha yang bertujuan
+                                        memberikan jasa
+                                        pelayanan/pengurusan atau
+                                        seluruh kegiatan diperlukan
+                                        bagi terlaksananya pengiriman,
+                                        pengangkutan dan penerimaan
+                                        barang dengan menggunakan
+                                        multimodal trasport baik darat,
+                                        laut dan udara.">
+                                    </div>
+                                    <div class="col-lg">
+                                        <p class="text-capitalize">
+                                            pengertian freight forwarding
+                                            (jasa pengiriman barang) adalah
+                                            badan usaha yang bertujuan
+                                            memberikan jasa
+                                            pelayanan/pengurusan atau
+                                            seluruh kegiatan diperlukan
+                                            bagi terlaksananya pengiriman,
+                                            pengangkutan dan penerimaan
+                                            barang dengan menggunakan
+                                            multimodal trasport baik darat,
+                                            laut dan udara.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card" x-show="service == 5">
                             <div class="card-body">
+                                <h1>Project Cargo</h1>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="{{ asset('assets/img/project_cargo_img.jpg') }}" class="img-fluid" alt="Specialis dalam menangani mobilisasi project cargo yang
+                                        didukung dengan beberapa armada dan team yang
+                                        profesional serta bertanggung jawab tinggi.">
+                                    </div>
+                                    <div class="col-lg">
+                                        <p class="text-capitalize">
+                                            Specialis dalam menangani mobilisasi project cargo yang
+                                            didukung dengan beberapa armada dan team yang
+                                            profesional serta bertanggung jawab tinggi.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card" x-show="service == 6">
                             <div class="card-body">
+                                <h1>Shipping Service</h1>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="{{ asset('assets/img/shipping_service_img.jpg') }}" class="img-fluid" alt="Memberikan pelayanan rental kapal
+                                        untuk menangani pengiriman barang
+                                        antar pulau yang terintegrasi baik
+                                        menggunakan Tugboat/Tongkang,
+                                        Landing Craft Tank (LCT) dan kapal
+                                        reguler (Container, Ro-Ro &
+                                        Breakbulk).">
+                                    </div>
+                                    <div class="col-lg">
+                                        <p class="text-capitalize">
+                                            Memberikan pelayanan rental kapal
+                                            untuk menangani pengiriman barang
+                                            antar pulau yang terintegrasi baik
+                                            menggunakan Tugboat/Tongkang,
+                                            Landing Craft Tank (LCT) dan kapal
+                                            reguler (Container, Ro-Ro &
+                                            Breakbulk).
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

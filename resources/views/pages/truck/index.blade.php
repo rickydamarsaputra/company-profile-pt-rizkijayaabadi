@@ -59,11 +59,20 @@
 					}
 				},
 				{
+					data: 'id_crypt',
 					render: function(data){
+						let DELETE_TRUCK_URL = "{{ route('truck.delete.action', ':id') }}";
+						let UPDATE_TRUCK_URL = "{{ route('truck.update.view', ':id') }}";
+						let DETAIL_TRUCK_URL = "{{ route('truck.detail.view', ':id') }}";
+						
+						DELETE_TRUCK_URL = DELETE_TRUCK_URL.replace(':id', data);
+						UPDATE_TRUCK_URL = UPDATE_TRUCK_URL.replace(':id', data);
+						DETAIL_TRUCK_URL = DETAIL_TRUCK_URL.replace(':id', data);
+
 						return `
-							<a class="btn btn-success btn-sm text-capitalize" href="#">update</a>
-							<a class="btn btn-danger btn-sm text-capitalize mx-2 delete_truck" href="#">delete</a>
-							<a class="btn btn-info btn-sm text-capitalize" href="#">detail</a>
+							<a class="btn btn-success btn-sm text-capitalize" href="${UPDATE_TRUCK_URL}">update</a>
+							<a class="btn btn-danger btn-sm text-capitalize mx-2 delete_truck" href="${DELETE_TRUCK_URL}">delete</a>
+							<a class="btn btn-info btn-sm text-capitalize" href="${DETAIL_TRUCK_URL}">detail</a>
 						`;
 					}
 				}

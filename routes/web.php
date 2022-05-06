@@ -52,6 +52,10 @@ Route::controller(DashboardController::class)->prefix('dashboard')->middleware([
     Route::get('/', 'index')->name('index.view');
     Route::get('/create', 'createView')->name('create.view');
     Route::post('/create', 'createAction')->name('create.action');
+    Route::get('/update/{id}', 'updateView')->name('update.view');
+    Route::patch('/update/{id}', 'updateAction')->name('update.action');
+    Route::get('/detail/{id}', 'detailView')->name('detail.view');
+    Route::get('/delete/{id}', 'deleteAction')->name('delete.action');
     Route::get('/datatables', 'datatables')->name('datatables');
   });
 });

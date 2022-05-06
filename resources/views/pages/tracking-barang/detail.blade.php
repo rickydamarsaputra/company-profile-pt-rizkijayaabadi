@@ -6,7 +6,7 @@
   <div class="section-header d-flex justify-content-between">
     <h1>Detail Tracking Barang</h1>
     <div>
-      <button type="button" x-on:click="open = 'tracking'" x-bind:class="open == 'tracking' ? 'btn btn-primary btn-sm' : 'btn btn-info btn-sm'">Tracking Pengiriman</button>
+      <button type="button" x-on:click="open = 'tracking'" x-bind:class="open == 'tracking' ? 'btn btn-primary btn-sm mr-2' : 'btn btn-info btn-sm mr-2'">Tracking Pengiriman</button>
       <button type="button" x-on:click="open = 'timeline'" x-bind:class="open == 'timeline' ? 'btn btn-primary btn-sm' : 'btn btn-info btn-sm'">Tambah Timeline</button>
     </div>
   </div>

@@ -37,6 +37,13 @@
           <div class="wrapper">
             <h1>Timeline Tracking</h1>
             <ul class="sessions">
+              @if ($tracking->status == 'sampai')
+                <li>
+                  <div class="time">Sampai</div>
+                  <p>{{ date_format($tracking->updated_at, 'd M Y, H:i') . ' WIB' }}</p>
+                  <p>Barang Sampai</p>
+                </li>
+              @endif
               @foreach ($timeline as $loopItem)
                 <li>
                   <div class="time"><a href="{{ route('tracking-barang.timeline.update.view', encrypt($loopItem->id)) }}">{{ $loopItem->title }}</a></div>

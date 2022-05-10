@@ -221,9 +221,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row d-flex align-items-stretch mb-20">
                     <div class="col-lg">
-                        <div class="single-cat active text-center mb-20" x-on:click="service = 1">
+                        <div class="single-cat active text-center" x-on:click="service = 1">
                             <div class="cat-icon">
                               <i class="fa-solid fa-map-location-dot"></i>
                             </div>
@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20" x-on:click="service = 2">
+                        <div class="single-cat text-center" x-on:click="service = 2">
                             <div class="cat-icon">
                               <i class="fa-solid fa-truck"></i>
                             </div>
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20" x-on:click="service = 3">
+                        <div class="single-cat text-center" x-on:click="service = 3">
                             <div class="cat-icon">
                                 <i class="fa-solid fa-hand-holding-dollar"></i>
                             </div>
@@ -253,17 +253,17 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20" x-on:click="service = 4">
+                        <div class="single-cat text-center" x-on:click="service = 4">
                             <div class="cat-icon">
                                 <i class="fa-solid fa-truck-ramp-box"></i>
                             </div>
                             <div class="cat-cap">
-                                <h5>Freight Forwarding</h5>
+                                <h5>Container Service</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20" x-on:click="service = 5">
+                        <div class="single-cat text-center" x-on:click="service = 5">
                             <div class="cat-icon">
                               <i class="fa-solid fa-box"></i>
                             </div>
@@ -273,12 +273,22 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="single-cat text-center mb-20" x-on:click="service = 6">
+                        <div class="single-cat text-center" x-on:click="service = 6">
                             <div class="cat-icon">
                                 <i class="fa-solid fa-ship"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Shipping Service</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="single-cat text-center" x-on:click="service = 7">
+                            <div class="cat-icon">
+                                <i class="fa-solid fa-ship"></i>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>Syarat Dan Ketentuan</h5>
                             </div>
                         </div>
                     </div>
@@ -353,15 +363,23 @@
                         </div>
                         <div class="card" x-show="service == 3">
                             <div class="card-body">
-                                <h1 class="text-center mb-0">Coming soon...</h1>
+                                <h1>Retail</h1>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="{{ asset('assets/img/retail_img.jpg') }}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-lg">
+                                        <p class="text-capitalize"></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card" x-show="service == 4">
                             <div class="card-body">
-                                <h1>Freight Forwarding</h1>
+                                <h1>Container Service</h1>
                                 <div class="row">
                                     <div class="col-lg">
-                                        <img src="{{ asset('assets/img/freight_forwarding_img.jpg') }}" class="img-fluid" alt="pengertian freight forwarding
+                                        <img src="{{ asset('assets/img/container_service_img.jpg') }}" class="img-fluid" alt="pengertian freight forwarding
                                         (jasa pengiriman barang) adalah
                                         badan usaha yang bertujuan
                                         memberikan jasa
@@ -435,6 +453,35 @@
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card" x-show="service == 7">
+                            <div class="card-body">
+                                <h1>Prosedur Pengiriman Barang PT. Rizki Jaya Abadi</h1>
+                                <ul>
+                                    <li>Pemilik/Pengirim barang wajib memberikan Informasi secara detail tentang Jenis, Jumlah, Isi dan nilai barang yang dikirim.</li>
+                                    <li>Semua masalah yang timbul akibat ketidakjelasan informasi dari pemilik/pengirim barang yang diberikan kepada pihak PT. Rizki Jaya Abadi Transportasi, adalah bukan tanggung jawab PT. Rizki Jaya Abadi Transportasi dan sepenuhnya merupakan tanggung jawab pemilik/pengirim barang.</li>
+                                    <li>Pemilik/Pengirim barang wajib melindungi barang yang dikirim dengan asuransi yang memadai dan menanggung seluruh biaya premi yang berlaku.</li>
+                                    <li>Seluruh kerusakan/kehilangan barang yang tidak dilindungi asuransi adalah sepenuhnya tanggung jawab pemilik/pengirim barang dan PT. Rizki Jaya Abadi Transportasi terbebas dari tanggung jawab dan segala jenis tuntutan hukum yang berlaku di Indonesia.</li>
+                                    <li>PT. Rizki Jaya Abadi Traansportasi mempunyai hak untuk memeriksa barang yang dikirim guna memastikan barang yang dikirim tidak melanggar hukum yang berlaku.</li>
+                                    <li>PT. Rizki Jaya Abadi Transportasi tidak melayani / melarang pengiriman barang-barang seperti obat terlarang, Senjata api, amunisi, bahan kimia padat atau cair yang mudah terbakar dan berbahaya, bahan peledak, benda/senjata tajam, surat berharga, uang logam mulia atau sejenisnya dan seluruh barang-barang yang dilarang oleh hukum yang berlaku di Indonesia.</li>
+                                    <li>Apabila pemilik/pengirim barang mengirimkan barang-barang yang dilarang oleh Negara, maka seluruh masalah dan kerugian yang timbul adalah mutlak tanggung jawab pemilik/pengirim barang. PT. Rizki Jaya Abadi Transportasi terbebas dari segala tanggung jawab dan tuntutan hukum dari pihak manapun yang berlaku di Negara Indonesia.</li>
+                                    <li>PT. Rizki Jaya Abadi Transportasi hanya berpacuan pada jumlah koli, bukan berdasar jumlah isi dalam koli. Kerusakan/kehilangan isi dalam koli tanpa kerusakan pada kemasan luar adalah bukan tanggung jawab PT Rizki Jaya Abadi Transportasi.</li>
+                                    <li>
+                                        PT. Rizki Jaya Abadi Transportasi tidak bertanggung jawab atas seluruh kerusakan maupun kehilangan barang kiriman yang diakibatkan oleh Force Majuere ( kejadian yang terjadi di luar kemampuan manusia dan tidak dapat dihindarkan ) maupun kejadian yang terjadi diluar control PT. Rizki Jaya Abadi Transportasi seperti hal nya :
+                                        <ul class="sub-regulation">
+                                            <li>Bencana Alam (Banjir, Angin, Jembatan Putus, Kabut Asap, Gunung Meletus, Tanah longsor dan segala jenis bencana alam lainnya).</li>
+                                            <li>Kebakaran (baik kebakaran alam, lintasan, maupun alat transportasi yang berkaitan).</li>
+                                            <li>Huru – hara, Peperangan, Pembajakan, Teror, Kekacauan di Jaringan (darat, laut maupun udara) dan kejadian-kejadian sejenisnya.</li>
+                                            <li>Terjadinya penahanan, penyitaan ataupun pemusnahan barang kiriman oleh pejabat pemerintah terkait (Bea Cukai, Karantina, Kejaksaan dan instansi Lainnya).</li>
+                                            <li>Terjadinya Kesalahan teknis dari penerbangan, pelayaran dan PT KAI yang mengakibatkan kerugian material maupun non material seperti kapal tenggelam atau terbakar dan pesawat hilang kontak atau meledak, kereta api tergelincir atau tabrakan.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Selain syarat dan ketentuan yang tertulis pada surat jalan ini, PT Rizki Jaya Abadi Transportasi tidak dapat dibebani ataupun dituntut dengan perjanjian maupun dasar hukum lainnya tanpa adanya kesepakatan sebelumnya.</li>
+                                    <li>Apabila tidak ada komplain dari penerima saat barang diserahkan, maka barang kiriman dianggap telah diterima dengan baik dan benar, pada saat itu juga tanggung jawab PT. Rizki Jaya Abadi  Transportasi terhadap barang kiriman sudah berakhir.</li>
+                                    <li>Saat menyerahkan barang/menandatangani surat jalan PT. Rizki Jaya Abadi Transportasi, pemilik/pengirim barang dianggap telah membaca dan menyetujui semua syarat dan ketentuan pengiriman yang tertera pada surat jalan ini tanpa paksaan dari pihak manapun, serta membebaskan PT. Rizki Jaya Abadi Transportasi dari segala tuntutan dan bentuk ganti rugi apapun.</li>
+                                    <li>PT. Rizki Jaya Abadi Transportasi hanya menerima klaim dari pemilik/pengirim barang. Klaim kerusakan ataupun kehilangan harus dilengkapi dengan dokumen dokumen terkait beserta bukti yang akurat selambat-lambatnya 2x24 jam terhitung sejak barang diterima.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -537,7 +584,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                      <img src="assets/img/gallery/about2.png" alt="" class="w-100 float-right">
+                      <img src="assets/img/gallery/about_1.jpg" alt="" class="w-100 float-right">
                     </div>
                 </div>
             </div>
@@ -551,7 +598,7 @@
                 <div class="footer-top footer-padding">
                     <!-- Footer Menu -->
                     <div class="row d-flex">
-                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6">
+                        <div class="col-lg-5">
                             <div class="single-footer-caption mb-50">
                                 <h1 class="text-white">PT. Rizki Jaya Abadi Transportasi</h1>
                                 <div class="footer-tittle">
@@ -577,12 +624,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <div class="col-lg-5">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>CONTACT PERSON</h4>
                                     <ul>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014 (test)</a></li>
                                         <li><a href="https://api.whatsapp.com/send/?phone=6281354697558&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081354697558</a></li>
                                         <li><a href="https://api.whatsapp.com/send/?phone=6281217829942&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081217829942</a></li>
                                         <li><a href="https://api.whatsapp.com/send/?phone=6282336584694&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 082336584694</a></li>

@@ -159,12 +159,15 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
+                            <div class="col-lg">
                                 <div class="logo">
-                                    <a href="{{ route('index') }}"><img src="{{ asset('assets/img/rja_logo.png') }}" alt="" width="65px"></a>
+                                    <a href="{{ route('index') }}" class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/img/rja_logo.png') }}" alt="" width="65px">
+                                        <h5 class="text-white mb-0 ml-2">PT. Rizki Jaya Abadi Transportasi</h5>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10">
+                            <div class="col-lg">
                                 <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
@@ -198,9 +201,9 @@
                 <div class="single-slider slider-height d-flex align-items-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-10 col-lg-10">
+                            <div class="col">
                                 <div class="hero__caption">
-                                    <h1>Kami Melayani <span>Pengiriman</span> Barang - Barang Retail Ke Seluruh Indonesia</h1>
+                                    <h1>Kami Melayani <span>Jasa Pengiriman</span> Cargo, Heavy Equipment, Project Logistic and Retail</h1>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +248,7 @@
                     <div class="col-lg">
                         <div class="single-cat text-center" x-on:click="service = 3">
                             <div class="cat-icon">
-                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <i class="fa-solid fa-cubes"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Retail</h5>
@@ -285,7 +288,7 @@
                     <div class="col-lg">
                         <div class="single-cat text-center" x-on:click="service = 7">
                             <div class="cat-icon">
-                                <i class="fa-solid fa-ship"></i>
+                                <i class="fa-solid fa-landmark"></i>
                             </div>
                             <div class="cat-cap">
                                 <h5>Syarat Dan Ketentuan</h5>
@@ -490,7 +493,7 @@
         </div>
         <!-- Categories Area End -->
         <!--? About Area Start -->
-        <div class="about-low-area padding-bottom" id="about">
+        <div class="about-low-area" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -590,6 +593,79 @@
             </div>
         </div>
         <!-- About Area End -->
+        <!--Team Ara Start -->
+        <div class="team-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="cl-xl-7 col-lg-8 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Our Team Mambers</span>
+                            <h2>Kami Siap Membantu Anda</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team1.png" alt="">
+                                <div class="team-caption">
+                                    <h3>Pak Rudi</h3>
+                                    <p>Tujuan Kalimantan dan Sulawesi</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
+                                        <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team1.png" alt="">
+                                <div class="team-caption">
+                                    <h3>Pak Rudi</h3>
+                                    <p>Tujuan Jawa dan Sumatra</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
+                                        <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team1.png" alt="">
+                                <div class="team-caption">
+                                    <h3>Pak Rudi</h3>
+                                    <p>Tujuan Bali, NTB dan NTT</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
+                                        <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team1.png" alt="">
+                                <div class="team-caption">
+                                    <h3>Pak Rudi</h3>
+                                    <p>Tujuan Container Seluruh Indonesia</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
+                                        <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Ara End -->
     </main>
     <footer id="contact">
         <!--? Footer Start-->
@@ -624,15 +700,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>CONTACT PERSON</h4>
                                     <ul>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014 (test)</a></li>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=6281354697558&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081354697558</a></li>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=6281217829942&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 081217829942</a></li>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=6282336584694&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp-square mr-1"></i> 082336584694</a></li>
+                                        <li>
+                                            <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
+                                                <img src="{{ asset('assets/img/customer_service_man_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014 ( Pak Rudi, Tujuan Kalimantan dan Sulawesi )
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281354697558&text&app_absent=0" target="_blank">
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <i class="fa-brands fa-whatsapp-square mr-1"></i> 081354697558 ( Bu Tatik, Tujuan Jawa dan Sumatra )
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281217829942&text&app_absent=0" target="_blank">
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <i class="fa-brands fa-whatsapp-square mr-1"></i> 081217829942 ( Bu Suci, Tujuan Bali, NTB dan NTT )
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6282336584694&text&app_absent=0" target="_blank">
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <i class="fa-brands fa-whatsapp-square mr-1"></i> 082336584694 ( Bu Erlita, Tujuan Container Seluruh Indonesia )
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

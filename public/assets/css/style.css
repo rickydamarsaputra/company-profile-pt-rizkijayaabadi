@@ -2214,7 +2214,7 @@ span.text-orange {
     margin-top: 0px !important;
 }
 .mobile_menu .slicknav_menu .slicknav_btn {
-    top: -34px;
+    top: -50px;
 }
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
     background-color: #f32424 !important;
@@ -2975,7 +2975,7 @@ span.text-orange {
 }
 .team-area .single-team .team-caption {
     position: absolute;
-    bottom: -36px;
+    bottom: -50px;
     background: rgba(255, 255, 255, 0.6);
     width: 100%;
     padding-top: 20px;
@@ -2992,12 +2992,12 @@ span.text-orange {
     line-height: 13px;
     font-family: "Barlow", sans-serif;
 }
-.team-area .single-team .team-caption h3 a {
+.team-area .single-team .team-caption h3 {
     color: #2c234d;
     font-weight: 700;
     font-size: 20px;
 }
-.team-area .single-team .team-caption h3 a:hover {
+.team-area .single-team .team-caption h3:hover {
     color: #f32424;
 }
 .team-area .single-team .team-caption p {
@@ -3016,7 +3016,7 @@ span.text-orange {
     background: #f32424;
     bottom: 0;
 }
-.team-area .single-team:hover .team-caption h3 a {
+.team-area .single-team:hover .team-caption h3 {
     color: #fff;
 }
 .team-area .single-team:hover .team-caption p {

@@ -55,6 +55,10 @@
         position: relative;
     }
     
+    .container-timeline .sessions li {
+        margin-bottom: 0;
+    }
+
     .container-timeline li {
         padding-bottom: 0.5rem;
         border-left: 1px solid #abaaed;
@@ -369,10 +373,14 @@
                                 <h1>Retail</h1>
                                 <div class="row">
                                     <div class="col-lg">
-                                        <img src="{{ asset('assets/img/retail_img.jpg') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('assets/img/retail_img.jpg') }}" class="img-fluid" alt="Kami Melayani Jasa Pengiriman Barang Retail atau Paketan paling murah di seluruh Indonesia
+                                        Yang dilengkapi dengan fitur-fitur dan keunggulan seperti Fitur Tracking barang yang memudahkan anda untuk melacak barang kiriman anda">
                                     </div>
                                     <div class="col-lg">
-                                        <p class="text-capitalize"></p>
+                                        <p class="text-capitalize">
+                                            Kami Melayani Jasa Pengiriman Barang Retail atau Paketan paling murah di seluruh Indonesia
+                                            Yang dilengkapi dengan fitur-fitur dan keunggulan seperti Fitur Tracking barang yang memudahkan anda untuk melacak barang kiriman anda
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -382,31 +390,13 @@
                                 <h1>Container Service</h1>
                                 <div class="row">
                                     <div class="col-lg">
-                                        <img src="{{ asset('assets/img/container_service_img.jpg') }}" class="img-fluid" alt="pengertian freight forwarding
-                                        (jasa pengiriman barang) adalah
-                                        badan usaha yang bertujuan
-                                        memberikan jasa
-                                        pelayanan/pengurusan atau
-                                        seluruh kegiatan diperlukan
-                                        bagi terlaksananya pengiriman,
-                                        pengangkutan dan penerimaan
-                                        barang dengan menggunakan
-                                        multimodal trasport baik darat,
-                                        laut dan udara.">
+                                        <img src="{{ asset('assets/img/container_service_img.JPG') }}" class="img-fluid" alt="Kami melayani Jasa pengiriman barang menggunakan Container 20 feet dan 40 feet
+                                        paling murah ke seluruh Indonesia. Dilengkapi dengan layanan door to door service dan Customer Service 24 Jam">
                                     </div>
                                     <div class="col-lg">
                                         <p class="text-capitalize">
-                                            pengertian freight forwarding
-                                            (jasa pengiriman barang) adalah
-                                            badan usaha yang bertujuan
-                                            memberikan jasa
-                                            pelayanan/pengurusan atau
-                                            seluruh kegiatan diperlukan
-                                            bagi terlaksananya pengiriman,
-                                            pengangkutan dan penerimaan
-                                            barang dengan menggunakan
-                                            multimodal trasport baik darat,
-                                            laut dan udara.
+                                            Kami melayani Jasa pengiriman barang menggunakan Container 20 feet dan 40 feet
+                                            paling murah ke seluruh Indonesia. Dilengkapi dengan layanan door to door service dan Customer Service 24 Jam
                                         </p>
                                     </div>
                                 </div>
@@ -436,7 +426,7 @@
                                 <h1>Shipping Service</h1>
                                 <div class="row">
                                     <div class="col-lg">
-                                        <img src="{{ asset('assets/img/shipping_service_img.jpg') }}" class="img-fluid" alt="Memberikan pelayanan rental kapal
+                                        <img src="{{ asset('assets/img/shipping_service_img.JPG') }}" class="img-fluid" alt="Memberikan pelayanan rental kapal
                                         untuk menangani pengiriman barang
                                         antar pulau yang terintegrasi baik
                                         menggunakan Tugboat/Tongkang,
@@ -587,7 +577,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                      <img src="assets/img/gallery/about_1.jpg" alt="" class="w-100 float-right">
+                        <img src="{{ asset('assets/img/gallery/about_1.JPG') }}" alt="" class="w-100 float-right">
                     </div>
                 </div>
             </div>

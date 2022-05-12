@@ -7,7 +7,8 @@
     <title>PT. Rizki Jaya Abadi Transportasi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
+    <meta name="description" content="PT. Rizki Jaya Abadi Transportasi Berdiri pada tanggal 15 Juni 2009. Sebelumnya PT. Rizki Jaya Abadi berbadan hukum. Perseroan Komanditer dengan nama CV. Rizki Jaya Abadi dibawah wewenang notaris Ayem Agustinah., SH. Di Surabaya. Perseroan Terbatas ini didirikan untuk jangka waktu yang tidak terbatas, tertanggal sejak keputusan ini diturunkan oleh instansi pemerintah terkait yang mempunyai wewenang.
+    Didalam naungan PT. Rizki Jaya Abadi Transportasi telah tergabung tenaga-tenaga profesional dari bidang terkait yang mempunyai etos kerja yang tinggi serta dedikasi tinggi terhadap pekerjaan dalam membangun perusahaan PT. Rizki Jaya Abadi Transportasi guna memberikan keseimbangan terhadap perkembangan zaman dan laju tumbuh perekonomian Indonesia dan Masyarakat Ekonomi Asean (MEA)">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
 
     <!-- CSS here -->
@@ -697,25 +698,25 @@
                                     <ul>
                                         <li>
                                             <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281357777014&text&app_absent=0" target="_blank">
-                                                <img src="{{ asset('assets/img/customer_service_man_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <img src="{{ asset('assets/img/customer_service_man_icon.svg') }}" alt="customer service icon" width="24px" class="mr-2"/>
                                                 <i class="fa-brands fa-whatsapp-square mr-1"></i> 081357777014 ( Pak Rudi, Tujuan Kalimantan dan Sulawesi )
                                             </a>
                                         </li>
                                         <li>
                                             <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281354697558&text&app_absent=0" target="_blank">
-                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" alt="customer service icon" width="24px" class="mr-2"/>
                                                 <i class="fa-brands fa-whatsapp-square mr-1"></i> 081354697558 ( Bu Tatik, Tujuan Jawa dan Sumatra )
                                             </a>
                                         </li>
                                         <li>
                                             <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6281217829942&text&app_absent=0" target="_blank">
-                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" alt="customer service icon" width="24px" class="mr-2"/>
                                                 <i class="fa-brands fa-whatsapp-square mr-1"></i> 081217829942 ( Bu Suci, Tujuan Bali, NTB dan NTT )
                                             </a>
                                         </li>
                                         <li>
                                             <a class="d-flex align-items-end" href="https://api.whatsapp.com/send/?phone=6282336584694&text&app_absent=0" target="_blank">
-                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" width="24px" class="mr-2"/>
+                                                <img src="{{ asset('assets/img/customer_service_girl_icon.svg') }}" alt="customer service icon" width="24px" class="mr-2"/>
                                                 <i class="fa-brands fa-whatsapp-square mr-1"></i> 082336584694 ( Bu Erlita, Tujuan Container Seluruh Indonesia )
                                             </a>
                                         </li>

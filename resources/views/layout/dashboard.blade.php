@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <meta name="description" content="PT. Rizki Jaya Abadi Transportasi Berdiri pada tanggal 15 Juni 2009. Sebelumnya PT. Rizki Jaya Abadi berbadan hukum. Perseroan Komanditer dengan nama CV. Rizki Jaya Abadi dibawah wewenang notaris Ayem Agustinah., SH. Di Surabaya. Perseroan Terbatas ini didirikan untuk jangka waktu yang tidak terbatas, tertanggal sejak keputusan ini diturunkan oleh instansi pemerintah terkait yang mempunyai wewenang.
+    Didalam naungan PT. Rizki Jaya Abadi Transportasi telah tergabung tenaga-tenaga profesional dari bidang terkait yang mempunyai etos kerja yang tinggi serta dedikasi tinggi terhadap pekerjaan dalam membangun perusahaan PT. Rizki Jaya Abadi Transportasi guna memberikan keseimbangan terhadap perkembangan zaman dan laju tumbuh perekonomian Indonesia dan Masyarakat Ekonomi Asean (MEA)">
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
   <title>PT. Rizki Jaya Abadi Transportasi - @yield('titlePage')</title>
 
